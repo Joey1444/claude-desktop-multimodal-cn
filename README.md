@@ -159,6 +159,13 @@ Claude Desktop
 
 ---
 
+## 平台版
+
+想把这篇发到掘金 / 知乎 / 少数派？用 [`article/`](article/) 里那一版——更适合平台读者阅读，
+并附了[标题、摘要、标签和配图建议](article/发布信息.md)。
+
+---
+
 ## 常见问题
 
 **Q：只用 OpenRouter，不用 CC Switch 行不行？**
