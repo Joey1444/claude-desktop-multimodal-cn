@@ -1,0 +1,27 @@
+{
+  "_说明": "Claude Desktop 的 MCP 配置示例。路径：%APPDATA%\\Claude\\claude_desktop_config.json",
+  "_注意": [
+    "把 <你的用户名> 换成实际用户名；本文件里路径一律用正斜杠，避免反斜杠被当转义符。",
+    "OPENROUTER_API_KEY 去 https://openrouter.ai/keys 申请。",
+    "改完必须完全重启 Claude Desktop。"
+  ],
+  "mcpServers": {
+    "openrouter": {
+      "_说明": "主体：chat / 图片 / 视频 / 语音 / 转录 / 重排（19 个工具）",
+      "command": "C:/nvm4w/nodejs/node.exe",
+      "args": [
+        "C:/nvm4w/nodejs/node_modules/@stabgan/openrouter-mcp-multimodal/dist/index.js"
+      ],
+      "env": {
+        "OPENROUTER_API_KEY": "sk-or-v1-用你自己的"
+      }
+    },
+    "openrouter-extra": {
+      "_说明": "补缺：embeddings / decisions（主体没有这两类）",
+      "command": "F:/python/Python310/python.exe",
+      "args": [
+        "D:/apps/openrouter-mcp/server.py"
+      ]
+    }
+  }
+}
